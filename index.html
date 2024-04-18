@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cc3fb0380b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        
+        <nav>
+            <img src="images/logo.png" alt="logo" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <!-- <p>Business Analyst</p> -->
+            <h1>Hi, I'm <span>Tarun</span><br> from India</h1>
+        </div>
+    </div>
+</div>
+<!-- ----------------about------------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user3.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm Seera Sai Tarun, a Pre-final year student at IIT Dhanbad,  
+                    pursuing Bachelor of Technology in Electronics & Communication Engineering, 
+                    passionate about Web Development, Business Analytics. Through my studies, I've developed skills in 
+                    Competitive programming, Full stack web development, data analysis and actively engaged in building projects 
+                    including Travel agency website, Weather Web app, some data analysis projects shaping my perspective 
+                    and fueling my passion for Analytics field and building websites. I believe in "Curiosity fuels growth"  and
+                    am driven to push my boundaries, embrace challenges, and emerge as a resilient and resourceful individual. 
+                    Let's connect and explore opportunities together!</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>Data Analysis</span><br>Analyze data, drive informed decisions</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="achievements">
+                    <ul>
+                        <li><span>Gold Medalist</span><br> in IMO, Ramanujan Olympiad</li>
+                        <li><span>Won 1st place</span><br> in school-level Abacus Competition spanning 3 districts</li>
+                        <li><span>Won 1st place</span><br> in District-wide Debate Competition</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021 - present</span><br>BTech(ECE) - IIT Dhanbad</li>
+                        <li><span>2019 - 2021</span><br>Class 12 - Ascent Jr. College</li>
+                        <li><span>2018 - 2019</span><br>Class 10 - Dr.Besant School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------------------services----------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>In web development, I provide end-to-end services, including front-end and back-end development, database integration,
+                     and server management. My focus is on creating responsive, user-friendly websites using the latest technologies 
+                     and best practices. Whether you need a simple website or a complex web application, I try to deliver high-quality solutions
+                     that drive engagement and business growth. My current focus is on learning new technologies and upskilling myself in this field</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Even though I am a beginner in this field my goal is  to provide comprehensive services encompassing user research, 
+                    wireframing, prototyping, and visual design. I am currently learning Design principles, Design Psychology and the 
+                    software used. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h2>Business Analytics</h2>
+                <p>In Business Analytics, I offer comprehensive services covering data collection, cleansing, analysis, and 
+                    interpretation. My focus is on turning data into strategic insights to drive better decision-making and business performance. 
+                    Using advanced analytics techniques such as predictive modeling, statistical analysis, and data visualization, 
+                    I try to help organizations uncover patterns, trends, and correlations in their data. My goal is to provide actionable recommendations 
+                    that drive growth, improve efficiency, and enhance overall business success.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------------portfolio----------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/travel_agency.jpg">
+                <div class="layer">
+                    <h3>Indian Tourism</h3>
+                    <p>This website shows us the complete details of a travel agency in India and its various services.
+                        The tourist spots are selected so that people of different ages and categories are guided to the best
+                        places that suit them
+                    </p>
+                    <a href="https://github.com/saitarun-10/indian_tourism_tarun" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/weather.png">
+                <div class="layer">
+                    <h3>Weather Application</h3>
+                    <p>Developed a website where users may enter a city name to view weather information for that location
+                        By selecting the “Get Device Location” button, one can also obtain weather information for their present location
+                        Numerous weather details such as temperature in degree Celsius, weather, Location, how it feels and the humidity will be provided                         
+                    </p>
+                    <a href="https://github.com/saitarun-10/Weather-App" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/portfolio3.jpg">
+                <div class="layer">
+                    <h3>Portfolio</h3>
+                    <p>Developed a website form of my resume to showcase my skills and work. Implemented using HTML, CSS and Javascript.</p>
+                    <a href="https://github.com/saitarun-10/Personal-Branding-Website" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/saitarun-10" target="_blank" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- --------------------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><a href="mailto:saitarunseera@gmail.com"><i class="fa-solid fa-paper-plane"></i></a>saitarunseera@gmail.com</p>
+                <p><a href="tel:+91-6304524609"><i class="fa-solid fa-phone"></i></a>+91-6304524609</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100076697847344" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/tarunn_.10/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/seera-sai-tarun-636aa6270/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/resume_off.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Tarun</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
